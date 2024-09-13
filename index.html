@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/weather-app/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" crossorigin src="/weather-app/index.js"></script>
   </head>
   <body>
-    <p>bvjhdsfgbvfjdksv</p>
+    <article class="city-input">
+    <div class="city-input__field-container">
+        <svg class="location button"><use href="../../assets/img/svg/city-input-icons.svg#icon-location"></use></svg>
+        <input class="city-input__field" placeholder="Enter the city">
+        <svg class="location button"><use href="../../assets/img/svg/city-input-icons.svg#icon-location"></use></svg>
+    </div>
+    <div class="city-input__viewed-city-container">
+        <button class="viewed-city" type="button">Lorem.</button>
+    </div>
+</article>
   </body>
 </html>
