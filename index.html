@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <script type="module" crossorigin src="/weather-app/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/weather-app/assets/index-Ba6GlUGx.css">
+    <link rel="modulepreload" crossorigin href="/weather-app/assets/vendor-De2ec26M.js">
+    <link rel="stylesheet" crossorigin href="/weather-app/assets/index-BvD-BDIm.css">
   </head>
   <body>
     <article class="city-input">
@@ -24,6 +25,7 @@
         <button class="viewed-city" type="button">Lorem.</button>
     </div> -->
 </article>
+
     <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -112,5 +114,36 @@
   </body>
 </html>
 
+    <select id="citySelect">
+    <option value="Kyiv">Kyiv</option>
+    <option value="Paris">Paris</option>
+    <option value="Vinnytsia">Vinnytsia</option>
+    <option value="Warsaw">Warsaw</option>
+  </select>
+   
+  <div class="button-container">
+    <button class="toggleChartBtn">
+      <span>Show Chart</span>
+      <svg class="icon">
+        <use href="/assets/img/svg/chart-arrows.svg#icon-circle-up"></use>
+      </svg>
+     
+    </button>
+    <div class="chart-container">
+      
+      <canvas class="weatherChart"></canvas>
+      
+    </div>
+  </div>
+
+  <!-- <div class="chart-container">
+    <h2>Weather Chart</h2>
+    <canvas class="weatherChart"></canvas>
+    
+  </div> -->
+  
+  
+  
+  
   </body>
 </html>
