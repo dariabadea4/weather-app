@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import url('./colors.css');
-@import url('./weather-cards+more-info.css');
+@import url('./city-input.css');
+
 *{
-  font-family: "Lato", sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
