@@ -156,6 +156,6 @@ cursor: pointer;
   transform: rotate(180deg)
 }
 
-/* .hidden{
+.hidden{
   display: none;
-} */
+}

@@ -37,3 +37,4 @@
 // });
 
 import './scripts/city-input'
+import './scripts/city-input__favorites'
