@@ -1,8 +1,6 @@
 
-
 .chart-container {
-  background-color: rgba(16, 33, 54, 0.8);
-  ; /* Dark transparent background */
+  background-color: rgba(16, 33, 54, 0.8);/* Dark transparent background */
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding around the chart */
   box-shadow: 0 4px 8px rgba(16, 33, 54, 0.8); /* Shadow for better appearance */
@@ -27,7 +25,7 @@
   
   .toggleChartBtn {
     background-color: transparent; 
-    color: #FF6B09; /* Orange text */
+    color: #FF6B09; /* Orange text*/
     font-size: 14px;
     font-weight: 400;
     line-height: 16.8px;

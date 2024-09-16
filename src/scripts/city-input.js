@@ -35,3 +35,5 @@ document.querySelector('.city-input__field').addEventListener('change', e => {
 document.querySelector('.star').addEventListener('click', () => {
   saveCity(inputData);
 });
+
+export default {inputData, getCity};
