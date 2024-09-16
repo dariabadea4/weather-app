@@ -46,6 +46,7 @@ const populateFavorites = () => {
                               </button>`;
       favorites.insertAdjacentHTML('beforeend', favorite);
     });
+    
   }
 };
 

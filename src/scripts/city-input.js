@@ -1,7 +1,7 @@
 import { saveCity } from "./city-input__functions";
 
-const input = document.querySelector('.city-input__field');
-const favorites= document.querySelector('.star');
+const input = document.querySelector('.city-input__field'),
+      favorites= document.querySelector('.star');
 let inputData;
 
 input.addEventListener('change', e => {
