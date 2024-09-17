@@ -1,11 +1,20 @@
-<!--
 <article class="city-input">
     <div class="city-input__field-container">
-        <svg class="location button"><use href="../../assets/img/svg/city-input-icons.svg#icon-location"></use></svg>
-        <input class="city-input__field" placeholder="Enter the city">
-        <svg class="location button"><use href="../../assets/img/svg/city-input-icons.svg#icon-location"></use></svg>
+        <svg class="location">
+            <use href="./city-input-icons.svg#icon-location"></use>
+          </svg>
+        <input class="city-input__field" id="city-input" placeholder="Enter the city">
+        <svg class="star">
+            <use href="./city-input-icons.svg#icon-grade"></use>
+          </svg>
+
     </div>
-    <div class="city-input__viewed-city-container">
-        <button class="viewed-city" type="button">Lorem.</button>
+    <div class="viewed-city__container">
+        <svg class="viewed-city__prev hidden"><use href="./city-input-icons.svg#icon-chevron"></use>
+        </svg>
+        <div class="viewed-city__favorites-container">
+        </div>
+        <svg class="viewed-city__next"><use href="./city-input-icons.svg#icon-chevron"></use>
+        </svg>
     </div>
-</article> -->
+</article>

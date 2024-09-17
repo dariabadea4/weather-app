@@ -1,20 +1,25 @@
 .container{
     width: 20rem;
     max-width: 100%;
+
 }
 .forecast-buttons {
     display: flex;
     justify-content: center;
     gap: 1.25rem;
     padding: 0.625rem;
+    position: absolute;
+    top: 24.313rem;
+    left: 50%;
+    transform: translate(-50%);
 }
 .forecast-buttons button {
     width: 7.875rem;
     line-height: 1.688rem;
     padding: 0rem 0.75rem;
     border: none;
-    background-color: #ffffff;
-    color: var(--color-white);
+    background-color: var(--color-white-50);
+    color: var(--color-black);
     border-radius: 1.25rem;
     cursor: pointer;
     font-weight: bold;
