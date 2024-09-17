@@ -5,7 +5,7 @@ import {
   currentPage,
   getCity,
 } from './city-input__functions';
-import { inputData } from './city-input';
+// import { inputData } from './city-input';
 
 const nextBtn = document.querySelector('.viewed-city__next'),
   prevBtn = document.querySelector('.viewed-city__prev'),
