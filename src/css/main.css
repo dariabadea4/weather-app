@@ -2,8 +2,12 @@
 @import url('./colors.css');
 @import url('./city-input.css');
 @import url('./weather-cards+more-info.css');
+@import url('./buttons.css');
 *{
     font-family: "Lato", sans-serif;
     box-sizing: border-box;
     margin: 0;
+}
+body{
+    background-color: skyblue;
 }
