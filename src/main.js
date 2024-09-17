@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import { updateChart } from '../js/chart'; // Import the function from chart.js
 
@@ -38,3 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 import './scripts/city-input'
 import './scripts/city-input__favorites'
+=======
+import './scripts/city-input.js'
+import './scripts/input-cards-api-logic.js';
+>>>>>>> main
