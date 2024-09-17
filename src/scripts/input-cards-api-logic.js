@@ -277,7 +277,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // });
   // document.getElementById('get-weather-btn').addEventListener('click', getWeather);
   document.querySelector('#city-input').addEventListener('change',()=>{
+<<<<<<< HEAD
     getWeather(inputData)
   })
 });
 
+=======
+    getWeather(inputData);
+  })
+});
+>>>>>>> 918343cf294798e6f1e0ec532c783081d31b8382
