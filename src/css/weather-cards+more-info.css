@@ -1,6 +1,8 @@
 .weather-layout{
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 8rem;
 }
 
 .weather{
@@ -25,6 +27,7 @@
   align-items: center;
   gap: 20px;
   color:rgba(255, 255, 255, 0.55);
+  text-align: center;
 }
 .min-max{
   display: flex;
@@ -119,17 +122,13 @@ padding: 25px;
   justify-content: center;
 }
 
-.weather-card-initial {
-  margin: 10px;
-  padding: 15px;
-  text-align: center;
-}
 
 .more-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .more-info.hidden {
@@ -137,7 +136,6 @@ padding: 25px;
 }
 
 .hourly-info {
-  margin: 10px;
   border-radius: 10px;
   text-align: center;
 }
@@ -148,7 +146,7 @@ padding: 25px;
 .selected-day {
   color: var(--color-secondary);
 }
-.day{
+.day-weather{
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -173,4 +171,142 @@ padding: 25px;
   font-size: 14px;
   font-weight: 700;
   line-height: 16.8px;
+}
+
+.more-info-scrollable {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+}
+
+.more-info-scrollable::-webkit-scrollbar {
+  height: 5px;
+  color: var(--color-secondary);
+
+}
+
+.more-info-scrollable::-webkit-scrollbar-thumb {
+  background-color: rgba(16, 33, 54, 0.8); /* Culoare scrollbar */
+  border-radius: 10px;
+}
+
+.hourly-info {
+  margin: 0 5px;
+}
+
+.slider-arrow{
+  display: none;
+}
+.weather-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+@media (max-width: 480px){
+  .weather-cards-initial{
+    gap: 20px;
+  }
+  .day-weather{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0.04em;
+
+  }
+  .date{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0.04em;
+  }
+  .min-max{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0.04em;
+
+  }
+  .more-info-btn{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0.04em;
+  }
+  .time{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0.04em;
+  }
+  .degrees{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0.04em;
+  }
+  .property-details{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0.04em;
+  }
+
+  .weather-card{
+    padding: 2rem;
+  }
+
+  .more-info-scrollable {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Asigură un scroll lin */
+    width: 90%; /* Lățime pentru container */
+  }
+
+
+  .weather-cards-initial {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 90%;
+    justify-content: flex-start;
+  }
+
+}
+@media (min-width: 480px) and (max-width: 760px) {
+  .weather-cards-initial{
+    gap: 20px;
+  }
+
+  .weather-card{
+    padding: 2rem;
+  }
+
+  .more-info-scrollable {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Asigură un scroll lin */
+    width: 90%; /* Lățime pentru container */
+  }
+
+
+  .weather-cards-initial {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 90%;
+    justify-content: flex-start;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 1050px) {
+  .weather-cards-initial{
+    gap: 40px;
+  }
+  .hourly-info:nth-child(-n+5) {
+    display: block;
+  }
+
 }
