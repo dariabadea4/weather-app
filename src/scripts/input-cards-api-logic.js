@@ -1,15 +1,16 @@
+import { inputData } from "./city-input";
+
 document.addEventListener('DOMContentLoaded', function() {
   const apiKey = "20ffa3f3195f1b01715c348123da79a3";
 
   // Funcția pentru a obține datele meteo
-  async function getWeather() {
-    const city = document.getElementById('city-input').value;
-    if (!city) {
+  async function getWeather(location) {
+    if (!location) {
       alert("Please enter a city name");
       return;
     }
 
-    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=metric&appid=${apiKey}`;
 
     try {
       const response = await fetch(url);
@@ -269,10 +270,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  let debounceTimer;
-  document.getElementById('city-input').addEventListener('input', function() {
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(getWeather, 500);
-  });
+  // let debounceTimer;
+  // document.getElementById('city-input').addEventListener('input', function() {
+  //   clearTimeout(debounceTimer);
+  //   debounceTimer = setTimeout(getWeather, 500);
+  // });
   // document.getElementById('get-weather-btn').addEventListener('click', getWeather);
+  document.querySelector('#city-input').addEventListener('change',()=>{
+    getWeather(inputData);
+  })
 });
