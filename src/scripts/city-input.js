@@ -12,4 +12,4 @@ favorites.addEventListener('click', () => {
   saveCity(inputData);
 });
 
-export default inputData;
+export {inputData};
