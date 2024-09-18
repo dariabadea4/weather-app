@@ -25,14 +25,25 @@ const getCity = key => {
   }
 };
 
-// remove item from local storage
+// create city object
+const newCity = (cityName) => ({ 
+  cityName :cityName, 
+  id: Math.floor((Math.random()*200)+1)
+});
+
+// const checkLength =(arr)=>{
+//   if(arr.length)
+// }
+
 
 const saveCity = value => {
+  const cityObj = newCity(value)
   const currentState = getCity('orase');
   if (currentState === undefined) {
-    setCity('orase', [value]);
+    setCity('orase', [cityObj]);
   } else {
-    currentState.push(value);
+    const cityObj = newCity(value)
+    currentState.push(cityObj);
     setCity('orase', currentState);
   }
 };
@@ -54,8 +65,8 @@ const populateFavorites = () => {
     if (cities.length < 4) {
       nextBtn.classList.add('hidden');
     }
-    if(currentPage >= 1){
-      prevBtn.classList.remove('hidden')
+    if (currentPage >= 1) {
+      prevBtn.classList.remove('hidden');
     }
     favorites.innerHTML = '';
     const begin = currentPage * itemsOnPage,
@@ -63,10 +74,10 @@ const populateFavorites = () => {
       pageItems = cities.slice(begin, end);
 
     pageItems.forEach(item => {
-      const shortCity = shortWord(item, 7);
-      const favorite = `<button class="viewed-city" type="button" value="${shortCity}">
+      const shortCity = shortWord(item.cityName, 7);
+      const favorite = `<button class="viewed-city" type="button" value="${shortCity}"data-id="${item.id}">
                                   ${shortCity}
-                                  <svg class="viewed-city__close-btn">
+                                  <svg class="viewed-city__close-btn" data-id="${item.id}">
                                       <use href ="./city-input-icons.svg#icon-close"></use>
                                   </svg>
                               </button>`;
@@ -85,9 +96,17 @@ const nextPage = pageNumber => {
 
 const prevPage = pageNumber => {
   if (pageNumber >= 1) {
-    currentPage --;
+    currentPage--;
     populateFavorites();
   }
 };
 
-export {getCity, saveCity, populateFavorites, nextPage, prevPage, currentPage };
+export {
+  setCity,
+  getCity,
+  saveCity,
+  populateFavorites,
+  nextPage,
+  prevPage,
+  currentPage,
+};
