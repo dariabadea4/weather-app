@@ -1,4 +1,4 @@
-import { saveCity } from "./city-input__functions";
+import { saveCity, populateFavorites } from "./city-input__functions";
 
 const input = document.querySelector('.city-input__field'),
       favorites= document.querySelector('.star');
@@ -10,6 +10,7 @@ input.addEventListener('change', e => {
 
 favorites.addEventListener('click', () => {
   saveCity(inputData);
+  populateFavorites();
 });
 
 export {inputData};
