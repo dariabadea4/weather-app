@@ -34,10 +34,10 @@ favContainer.addEventListener('click', e => {
         populateFavorites();
 });
 
-document.querySelector('.location'),addEventListener('click',()=>{
-  const answer = confirm('Would you like to allow the browser to get your location?')
-  answer ? getLocation() : alert('Please enter a city then')
-})
+// document.querySelector('.location'),addEventListener('click',()=>{
+//   const answer = confirm('Would you like to allow the browser to get your location?');
+//   answer ? getLocation() : alert('Please enter a city then');
+// });
 
 populateFavorites();
 

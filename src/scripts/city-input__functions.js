@@ -88,6 +88,9 @@ const saveCity = value => {
 };
 
 const shortWord = (str, maxLength) => {
+  if(!str){
+    return
+  }
   if (str.length > maxLength) {
     return str.substring(0, maxLength) + '...';
   }
