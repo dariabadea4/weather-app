@@ -280,6 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // });
   // document.getElementById('get-weather-btn').addEventListener('click', getWeather);
   document.querySelector('#city-input').addEventListener('change',()=>{
-    getWeather(inputData);
+    getWeather(inputData)
   })
 });
+
