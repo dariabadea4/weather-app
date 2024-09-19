@@ -17,6 +17,8 @@
   "authors": "<poputa.alex@gmail.com> <dariabadea04@gmail.com> <nitagabriela05@mail.com> <rena.szabo@yahoo.com> <adina.gadalean@yahoo.com>",
   "license": "ISC",
   "dependencies": {
+    "chart.js": "^4.4.4",
+    "lodash": "^4.17.21",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

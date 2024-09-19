@@ -1,0 +1,153 @@
+/* input field */
+.city-input {
+  position: relative;
+  top: 1.875rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.city-input__field-container {
+  position: relative;
+}
+
+.city-input__field {
+  max-width: 31.25rem;
+  min-width: 9rem;
+  width: calc(100vw - 40px);
+  height: 3rem;
+  border-radius: 30px;
+  padding-left: 57px;
+  border: 0px;
+}
+
+.city-input__field::placeholder {
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0.04em;
+}
+
+.city-input__viewed-city-container {
+  width: 100%;
+  display: flex;
+}
+
+.location {
+  height: 1.375rem;
+  width: 1.375rem;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  fill: #aeb3b9;
+}
+
+.click-location,
+.location:hover {
+  fill: black;
+}
+
+.star {
+  height: 2.1rem;
+  width: 2.1rem;
+  fill: #7e8691;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+}
+
+.cilick-star,
+.star:hover {
+  stroke: gold;
+  fill: gold;
+}
+
+@media screen and (min-width: 768px) {
+  .city-input {
+    top: 3.75rem;
+  }
+  .city-input__field::placeholder {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .city-input {
+    top: 5rem;
+  }
+  .city-input__field {
+    max-width: 32.5rem;
+  }
+}
+
+/* favorite buttons */
+
+.viewed-city__container {
+  max-width: 31.25rem;
+  min-width: 9rem;
+  width: calc(100vw - 40px);
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.viewed-city {
+  height: 1.75rem;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-main-transparent-50);
+  border: 0px;
+  border-radius: 35px;
+  padding:0 9px 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: var(--color-white);
+  text-decoration: underline #ffffff50 1.5px;
+}
+
+.viewed-city:hover,
+.viewed-city__next:hover,
+.viewed-city__prev:hover{
+background-color: var(--color-main);
+cursor: pointer;
+}
+
+
+.viewed-city__favorites-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.viewed-city__close-btn {
+  height: 1.125rem;
+  width: 1.125rem;
+  fill: var(--color-white);
+  opacity: 0.5;
+}
+
+.viewed-city__next,
+.viewed-city__prev {
+  background-color: var(--color-main-transparent-50);
+  fill: var(--color-white);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50px;
+}
+
+.viewed-city__prev{
+  transform: rotate(180deg)
+}
+
+.hidden{
+  display: none;
+}
