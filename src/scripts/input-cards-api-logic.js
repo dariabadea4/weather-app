@@ -221,12 +221,15 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="degrees">${temp}°C</div>
             <div class="weather-properties">
                 <div class="property-details">
+                    <img src="/001-percip.png" alt="">
                     <p class="property-detail">${precip} mm</p>
                 </div>
                 <div class="property-details">
+                   <img src="/002-humidity.png" alt="">
                     <p class="property-detail">${humidity}%</p>
                 </div>
                 <div class="property-details">
+                    <img src="/003-wind.png" alt="">
                     <p class="property-detail">${wind} m/s</p>
                 </div>
             </div>
@@ -277,6 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // });
   // document.getElementById('get-weather-btn').addEventListener('click', getWeather);
   document.querySelector('#city-input').addEventListener('change',()=>{
-    getWeather(inputData);
+    getWeather(inputData)
   })
 });
+
