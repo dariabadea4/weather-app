@@ -21,12 +21,15 @@
             <div class="degrees">${y}°C</div>
             <div class="weather-properties">
                 <div class="property-details">
+                    <img src="/001-percip.png" alt="">
                     <p class="property-detail">${L} mm</p>
                 </div>
                 <div class="property-details">
+                   <img src="/002-humidity.png" alt="">
                     <p class="property-detail">${E}%</p>
                 </div>
                 <div class="property-details">
+                    <img src="/003-wind.png" alt="">
                     <p class="property-detail">${D} m/s</p>
                 </div>
             </div>
