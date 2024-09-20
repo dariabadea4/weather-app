@@ -1,18 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import url('./colors.css');
 @import url('./city-input.css');
-@import url('./weather-cards+more-info.css');
 @import url('./buttons.css');
 @import url('./quote.css');
 *{
     font-family: "Lato", sans-serif;
     box-sizing: border-box;
     margin: 0;
-}
-body{
-    background-image: url('/Слой-2 1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
 }

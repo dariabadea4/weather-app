@@ -126,4 +126,6 @@
     background-color: #ffffff;
 }
 
-
+.selected{
+    background-color: var(--color-white);
+}
