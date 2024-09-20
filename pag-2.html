@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/weather-app/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <script type="module" crossorigin src="/weather-app/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/weather-app/assets/city-input__favorites-DJSUhGZf.js">
-    <link rel="stylesheet" crossorigin href="/weather-app/assets/index-C30UiO6j.css">
-  </head>
-  <body>
+  <script type="module" crossorigin src="/weather-app/pag-2.js"></script>
+  <link rel="modulepreload" crossorigin href="/weather-app/assets/city-input__favorites-DJSUhGZf.js">
+  <link rel="stylesheet" crossorigin href="/weather-app/assets/pag-2-BYqZtbb6.css">
+</head>
+<body>
     <article class="city-input">
     <div class="city-input__field-container">
         <svg class="location-icon">
@@ -38,12 +38,17 @@
   </div>
 </article>
 
-    <article>
-    <div class="quote">
-        <p id="quote-text">Citatul va apărea aici.</p>
-        <span id="quote-author" class="quote-author">Autorul va apărea aici.</span>
+    <article class="weather-layout">
+<div class="weather">
+  <div class="weather-wrapper">
+    <button class="slider-arrow left-arrow" id="left-arrow">⬅️</button>
+    <div class="weather-cards-initial" id="weather-cards">
     </div>
-    </div>
+    <button class="slider-arrow right-arrow" id="right-arrow">➡️</button>
+  </div>
+  <div id="more-info-container" class="more-info hidden">
+  </div>
+</div>
 </article>
-  </body>
+</body>
 </html>
