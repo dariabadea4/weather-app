@@ -1,8 +1,10 @@
 .weather-layout{
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 22rem;
+  position: absolute;
+  top: 15.25rem;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .weather{

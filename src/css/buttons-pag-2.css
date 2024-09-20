@@ -9,11 +9,11 @@
     gap: 1.25rem;
     padding: 0.625rem;
     position: absolute;
-    top: 24.313rem;
-    left: 50%;
-    transform: translate(-50%);
+    top: 11.625rem;
+    right: 50%;
+    transform: translate(50%);
 }
-.forecast-buttons button {
+.forecast-buttons__button {
     width: 7.875rem;
     line-height: 1.688rem;
     padding: 0rem 0.75rem;
@@ -25,9 +25,22 @@
     font-weight: bold;
 }
 .forecast-buttons button:hover {
-    background-color: #ffffff;
+    background-color: var(--color-white);
 }
-
 .selected{
     background-color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+    .forecast-buttons{
+        top:32.813rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .forecast-buttons{
+        top:29.75rem;
+        right: 6.875rem;
+        transform: translate(0);
+    }
 }
