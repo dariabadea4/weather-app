@@ -35,7 +35,7 @@
   display: flex;
 }
 
-.location {
+.location-icon {
   height: 1.375rem;
   width: 1.375rem;
   position: absolute;
@@ -45,11 +45,11 @@
 }
 
 .click-location,
-.location:hover {
+.location-icon:hover {
   fill: black;
 }
 
-.star {
+.star-icon {
   height: 2.1rem;
   width: 2.1rem;
   fill: #7e8691;
@@ -59,7 +59,7 @@
 }
 
 .cilick-star,
-.star:hover {
+.star-icon:hover {
   stroke: gold;
   fill: gold;
 }

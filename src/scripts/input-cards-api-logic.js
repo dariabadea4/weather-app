@@ -281,6 +281,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // document.getElementById('get-weather-btn').addEventListener('click', getWeather);
   document.querySelector('#city-input').addEventListener('change',()=>{
     getWeather(inputData)
-  })
+  });
+  document.querySelector('.viewed-city__favorites-container').addEventListener('click',(e)=>{
+    if(e.target.nodeName != 'BUTTON'){
+      return
+    }
+    getWeather(inputData)
+  });
 });
 
