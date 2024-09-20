@@ -1,3 +1,4 @@
+
 import { updateChart } from '../js/chart'; // Import the function from chart.js
 
 // Example data
@@ -34,3 +35,5 @@ document.querySelector('.toggleChartBtn').addEventListener('click', function () 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.chart-container').style.display = 'none';
 });
+
+import './scripts/city-input'
