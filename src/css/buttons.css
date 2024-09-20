@@ -3,6 +3,104 @@
     max-width: 100%;
 
 }
+.weather-info {
+    background-color: rgba(16, 33, 54, 1);
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    width: 17.5rem;
+    height: 12.063rem;
+    top: 10.25rem;
+    left: 1.25rem;
+    gap: 0rem;
+    border-radius: 2.125rem 2.125rem;
+    opacity: 0rem;
+}
+
+.about-icon {
+    width: 2.188rem;
+    height: 2.188rem;
+    top: 12.25rem;
+    left: 8.938rem;
+    padding: 0.311rem 0rem 0.311rem 0rem;
+    gap: 0rem;
+    opacity: 0rem;
+}
+
+.location {
+    font-family: Lato;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #767D85;
+}
+
+.temps {
+    font-family: var('lato');
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.current-temp {
+    font-family: var('lato');
+    font-size: 2.813rem;
+    font-weight: 300;
+    line-height: 3.375rem;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #f0f0f0;
+}
+
+.weather-info .temp {
+    font-size: 3rem;
+}
+
+.weather-info .location {
+    font-size: 1.125rem;
+}
+
+.temp-values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.625rem
+}
+
+.min-max__temp {
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.35rem;
+    color: rgba(255, 255, 255, 0.55);
+}
+.line {
+    border-left: 0.125rem solid rgba(255, 255, 255, 0.2);
+    height: 3.125rem;
+}
+
+.quote {
+    font-family: Lato;
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.05rem;
+    letter-spacing: 0.04em;
+    text-align: right;
+}
+
+.quote-author {
+    font-family: Lato;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.35rem;
+    letter-spacing: 0.04em;
+    text-align: right;
+}
 .forecast-buttons {
     display: flex;
     justify-content: center;
@@ -27,3 +125,5 @@
 .forecast-buttons button:hover {
     background-color: #ffffff;
 }
+
+
