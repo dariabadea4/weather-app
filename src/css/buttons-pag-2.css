@@ -33,13 +33,13 @@
 
 @media screen and (min-width: 768px) {
     .forecast-buttons{
-        top:32.813rem;
+        top:25.813rem;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .forecast-buttons{
-        top:29.75rem;
+        top:25.75rem;
         right: 6.875rem;
         transform: translate(0);
     }
