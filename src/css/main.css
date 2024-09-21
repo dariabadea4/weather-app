@@ -4,6 +4,7 @@
 @import url('./weather-cards+more-info.css');
 @import url('./buttons.css');
 @import url('./quote.css');
+@import url('./current-date.css')
 *{
     font-family: "Lato", sans-serif;
     box-sizing: border-box;
