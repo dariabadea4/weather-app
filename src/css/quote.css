@@ -7,6 +7,8 @@
     text-align: right;
     color: var(--color-white);
     position: absolute;
+    top: 677px;
+    right: 10px;
 }
 .quote-author {
     font-size: 18px;
@@ -15,5 +17,27 @@
     letter-spacing: 0.04em;
     text-align: right;
     color: var(--color-white);
-    position: absolute;
+}
+/*media */
+@media (min-width: 768px) {
+    .quote {
+        width: 379.58px;
+        height: 80px;
+        top: 760px;
+        right: 32px;  
+    }
+    .quote-author{
+        width: 94.14px;
+        height: 22px;
+    }
+}
+@media (min-width: 1280px){
+    .quote {
+        width: 395rem;
+        height: 4.875rem;
+        top: 46.125rem;
+    }
+    .quote-author{
+
+    }
 }
