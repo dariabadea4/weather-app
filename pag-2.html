@@ -7,7 +7,8 @@
     <title>Weather App</title>
   <script type="module" crossorigin src="/weather-app/pag-2.js"></script>
   <link rel="modulepreload" crossorigin href="/weather-app/assets/city-input__favorites-DJSUhGZf.js">
-  <link rel="stylesheet" crossorigin href="/weather-app/assets/pag-2-D3DQ0kxm.css">
+  <link rel="modulepreload" crossorigin href="/weather-app/assets/vendor-De2ec26M.js">
+  <link rel="stylesheet" crossorigin href="/weather-app/assets/pag-2-CVU3BBwq.css">
 </head>
 <body>
     <article class="city-input">
@@ -60,7 +61,8 @@
   </div>
 </article>
 
-    <article class="weather-layout">
+    <div class="test">
+<article class="weather-layout">
 <div class="weather">
   <div class="weather-wrapper">
     <button class="slider-arrow left-arrow" id="left-arrow">⬅️</button>
@@ -72,5 +74,18 @@
   </div>
 </div>
 </article>
+
+    <article class="margin">
+  <!-- Button for showing/hiding the chart positioned under weather layout -->
+  <div class="button-container">
+    <button class="toggleChartBtn">Show Chart</button>
+  </div>
+
+  <!-- Container for the chart below the button -->
+  <div class="chart-container">
+    <canvas class="weatherChart"></canvas>
+  </div>
+</article>
+</div>
 </body>
 </html>
