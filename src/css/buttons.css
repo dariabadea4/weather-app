@@ -15,20 +15,9 @@
     gap: 0rem;
     border-radius: 2.125rem 2.125rem;
     opacity: 0rem;
+    position: absolute;
 }
-
-.about-icon {
-    width: 2.188rem;
-    height: 2.188rem;
-    top: 12.25rem;
-    left: 8.938rem;
-    padding: 0.311rem 0rem 0.311rem 0rem;
-    gap: 0rem;
-    opacity: 0rem;
-}
-
 .location {
-    font-family: Lato;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.2rem;
@@ -37,7 +26,6 @@
 }
 
 .temps {
-    font-family: var('lato');
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.2rem;
@@ -46,7 +34,6 @@
 }
 
 .current-temp {
-    font-family: var('lato');
     font-size: 2.813rem;
     font-weight: 300;
     line-height: 3.375rem;
@@ -62,44 +49,18 @@
 .weather-info .location {
     font-size: 1.125rem;
 }
-
-.temp-values {
+.temp-container{
     display: flex;
-    justify-content: space-between;
-    margin-top: 0.625rem
+    flex-flow: row;
 }
-
-.min-max__temp {
+.min-temp .max-temp {
     display: flex;
     flex-direction: row;
     gap: 0.625rem;
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.35rem;
-    color: rgba(255, 255, 255, 0.55);
-}
-.line {
-    border-left: 0.125rem solid rgba(255, 255, 255, 0.2);
-    height: 3.125rem;
-}
-
-.quote {
-    font-family: Lato;
-    font-size: 0.875rem;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.05rem;
-    letter-spacing: 0.04em;
-    text-align: right;
-}
-
-.quote-author {
-    font-family: Lato;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.35rem;
-    letter-spacing: 0.04em;
-    text-align: right;
+    color: #767D85;
 }
 .forecast-buttons {
     display: flex;
@@ -108,10 +69,10 @@
     padding: 0.625rem;
     position: absolute;
     top: 24.313rem;
-    left: 50%;
-    transform: translate(-50%);
+    right: 50%;
+    transform: translate(50%);
 }
-.forecast-buttons button {
+.forecast-buttons__button {
     width: 7.875rem;
     line-height: 1.688rem;
     padding: 0rem 0.75rem;
@@ -122,10 +83,27 @@
     cursor: pointer;
     font-weight: bold;
 }
-.forecast-buttons button:hover {
+.forecast-buttons__button:hover {
     background-color: #ffffff;
 }
 
 .selected{
     background-color: var(--color-white);
+}
+
+/*media*/
+@media (min-width: 768px){
+.forecast-buttons{
+   top: 579px;
+}
+}
+@media (min-width: 1280px){
+    .forecast-buttons{
+        top: 573px;
+        right: 16px;
+    }
+     .forecast-buttons__button{
+        width: 182px;
+        height: 27px;
+     }
 }
