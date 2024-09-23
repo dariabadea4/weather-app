@@ -3,6 +3,7 @@
 @import url('./city-input.css');
 @import url('./weather-cards+more-info.css');
 @import url('./buttons-pag-2.css');
+@import url('./showchartScroll.css');
 
 *{
     font-family: "Lato", sans-serif;
@@ -18,4 +19,13 @@ body{
     background-attachment: fixed;
     position: relative;
     height: 100vh;
+}
+
+.test{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.weather-info{
+  display: none;
 }

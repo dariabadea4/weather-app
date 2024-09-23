@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const data = await response.json();
       displayCurrentWeather(data);
+
     } catch (error) {}
   };
   const displayCurrentWeather = data => {
@@ -56,6 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
     tempElement.textContent = `${Math.round(dayData.main.temp)}°C`;
     minTempElement.textContent = `${Math.round(dayData.main.temp_min)}°C`;
     maxTempElement.textContent = `${Math.round(dayData.main.temp_max)}°C`;
+
+   
+
   };
   cityInputElement.addEventListener('change', () => {
     const location = cityInputElement.value.trim();
