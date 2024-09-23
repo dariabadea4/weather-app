@@ -3,7 +3,9 @@ const favorites = document.querySelector('.viewed-city__favorites-container'),
   prevBtn = document.querySelector('.viewed-city__prev');
 
 let itemsOnPage,
-    currentPage = 0;
+    currentPage = 0,
+    longitude,
+    latitude;
 
 // store cities in local storage
 const setCity = (key, value) => {
@@ -47,10 +49,9 @@ const checkLength = (arr, number)=>{
 }
 
 // not actually getting the location
+
 const getLocation=()=>{
-  setTimeout(() => {
-    alert("Couldn't get locaton, please try again later")
-  }, 2000);
+  setTimeout(Notify.failure('Location not found,try again later'),2000)
 }
 
 
@@ -87,6 +88,7 @@ const saveCity = value => {
   }
 };
 
+// truncate displayed city
 const shortWord = (str, maxLength) => {
   if(!str){
     return
@@ -108,12 +110,12 @@ const populateFavorites = () => {
     checkLength(cities, currentPage)
     favorites.innerHTML = '';
     const begin = currentPage * itemsOnPage,
-      end = begin + itemsOnPage,
-      pageItems = cities.slice(begin, end);
+          end = begin + itemsOnPage,
+          pageItems = cities.slice(begin, end);
 
     pageItems.forEach(item => {
       const shortCity = shortWord(item.cityName, 6);
-      const favorite = `<button class="viewed-city" type="button" value="${shortCity}"data-id="${item.id}">
+      const favorite = `<button class="viewed-city" type="button" value="${item.cityName}"data-id="${item.id}">
                                   ${shortCity}
                                   <svg class="viewed-city__close-btn" data-id="${item.id}">
                                       <use href ="./city-input-icons.svg#icon-close"></use>
@@ -150,3 +152,4 @@ export {
   getLocation,
   currentPage,
 };
+

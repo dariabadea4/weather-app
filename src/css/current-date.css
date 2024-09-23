@@ -1,13 +1,13 @@
 .date-container {
   display: flex;
   flex-wrap: wrap;
-  background-color:  #102136CC;
-  color:  #FFFFFF;
+  background-color: #102136cc;
+  color: #ffffff;
   width: 280px;
   height: 184px;
   border-radius: 34px;
   position: absolute;
-  top:449px;
+  top: 449px;
   left: 22px;
   right: 22px;
   bottom: 157px;
@@ -16,11 +16,11 @@
 .day {
   width: 53px;
   height: 46px;
-position: absolute;
-top: 32px;
-left: 55px;
-right: 20px;
-bottom: 6px;
+  position: absolute;
+  top: 32px;
+  left: 55px;
+  right: 20px;
+  bottom: 6px;
   font-size: 45px;
   font-weight: 300;
   line-height: 54px;
@@ -38,9 +38,9 @@ bottom: 6px;
 .weekday {
   width: 65px;
   height: 46px;
- position: absolute;
- top: 32px;
- left: 150px;
+  position: absolute;
+  top: 32px;
+  left: 150px;
   font-size: 45px;
   font-weight: 300;
   line-height: 54px;
@@ -97,7 +97,7 @@ bottom: 6px;
   font-size: 14px;
 }
 
-.verticalLine1{
+.verticalLine1 {
   border: 1px solid #ffffff;
   height: 22px;
   position: absolute;
@@ -111,98 +111,97 @@ bottom: 6px;
   font-size: 14px;
 }
 
-.sunrise-svg{
+.sunrise-svg {
   position: absolute;
   top: 0px;
   left: -10px;
-  fill: #FF6B09;
+  fill: #ff6b09;
   width: 20px;
-height: 20px;
-background-color: #FFFFFF;
+  height: 20px;
+  background-color: #ffffff;
 }
 
-.sunset-svg{
+.sunset-svg {
   position: absolute;
   top: 0px;
   left: 90px;
-  fill: #FF6B09;
+  fill: #ff6b09;
   width: 20px;
-height: 20px;
-background-color: #FFFFFF;
+  height: 20px;
+  background-color: #ffffff;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1279px){
+@media only screen and (min-width: 768px) {
   .date-container {
     width: 704px;
     height: 250px;
-    top:639px;
+    top: 639px;
     left: 32px;
     right: 32px;
     bottom: 245px;
   }
 
   .day {
-  top: 32px;
-  left: 190px;
+    top: 32px;
+    left: 190px;
     font-size: 90px;
   }
-  
+
   .date-container sup {
     top: 20px;
     left: 290px;
     font-size: 30px;
   }
-  
+
   .weekday {
-   top: 32px;
-   left: 350px;
+    top: 32px;
+    left: 350px;
     font-size: 90px;
   }
-  
+
   .month {
     font-size: 18px;
     top: 130px;
     left: 225px;
   }
-  
+
   .verticalLine {
     top: 130px;
     left: 330px;
   }
-  
+
   .time {
     font-size: 18px;
     font-weight: 400;
     top: 130px;
     left: 369px;
   }
-  
+
   .sun-container {
     top: 190px;
     left: 258px;
   }
-  
+
   .sunrise {
     left: 10px;
     font-size: 18px;
   }
-  
 
   .sunset {
     left: 130px;
     font-size: 18px;
   }
-  
-  .sunrise-svg{
+
+  .sunrise-svg {
     left: -20px;
   }
-  
-  .sunset-svg{
+
+  .sunset-svg {
     left: 100px;
   }
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1280px) {
   .date-container {
     width: 624px;
     height: 264px;
@@ -210,63 +209,61 @@ background-color: #FFFFFF;
   }
 
   .day {
-  top: 50px;
-  left: 16px;
-  font-size: 90px;
+    top: 50px;
+    left: 16px;
+    font-size: 90px;
   }
-  
+
   .date-container sup {
     top: 40px;
     left: 120px;
     font-size: 30px;
   }
-  
+
   .weekday {
-   top: 50px;
-   left: 180px;
+    top: 50px;
+    left: 180px;
     font-size: 90px;
   }
-  
+
   .month {
     font-size: 18px;
     top: 162px;
     left: 25px;
   }
-  
+
   .verticalLine {
     top: 162px;
     left: 130px;
   }
-  
+
   .time {
     font-size: 18px;
     font-weight: 400;
     top: 162px;
     left: 160px;
   }
-  
+
   .sun-container {
     top: 162px;
     left: 390px;
   }
-  
+
   .sunrise {
     left: 10px;
     font-size: 18px;
   }
-  
 
   .sunset {
     left: 130px;
     font-size: 18px;
   }
-  
-  .sunrise-svg{
+
+  .sunrise-svg {
     left: -20px;
   }
-  
-  .sunset-svg{
+
+  .sunset-svg {
     left: 100px;
   }
-
 }
