@@ -21,13 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const data = await response.json();
       displayCurrentWeather(data);
     } catch (error) {
-      alert(error.message);
     }
   };
   const displayCurrentWeather = (data) => {
     const today = new Date().toISOString().split("T")[0];
     const dayData = data.list.find((item) => item.dt_txt.startsWith(today));
-    const icon = data.list[3].weather[0].icon
+    const {city:{country,name},list:[city, weather]}= data
+    const {main:{temp,temp_max,temp_min}}=city
+    // const
+    // console.log(icon);
     if (dayData) {
       const weatherIcon = `<img class="" src="http://openweathermap.org/img/wn/${icon}.png"></img>`;
       iconContainer.insertAdjacentHTML('afterbegin',weatherIcon)
