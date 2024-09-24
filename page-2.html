@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/svg+xml" href="/weather-app/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-  <script type="module" crossorigin src="/weather-app/pag-2.js"></script>
+  <script type="module" crossorigin src="/weather-app/page-2.js"></script>
   <link rel="modulepreload" crossorigin href="/weather-app/assets/city-input__favorites-DJSUhGZf.js">
   <link rel="modulepreload" crossorigin href="/weather-app/assets/vendor-De2ec26M.js">
-  <link rel="stylesheet" crossorigin href="/weather-app/assets/pag-2-CVU3BBwq.css">
+  <link rel="stylesheet" crossorigin href="/weather-app/assets/page-2-BjINQkm8.css">
 </head>
 <body>
-    <article class="city-input">
+    <div class="test">
+<article class="city-input">
     <div class="city-input__field-container">
         <svg class="location-icon">
             <use href="./city-input-icons.svg#icon-location"></use>
@@ -30,19 +32,17 @@
         </svg>
     </div>
 </article>
-
     <article>
   <div class="weather-info">  
   </div>
   <!--forecast-buttons section-->
   <div class="forecast-buttons">
-    <a href="../index.html"><button class="forecast-buttons__button" id="today-btn">TODAY</button></a>
-    <a href="../pag-2.html"><button class="forecast-buttons__button" id="five-days-btn">5 DAYS</button></a>
+    <a href="./index.html"><button class="forecast-buttons__button" id="today-btn">TODAY</button></a>
+    <a href="./page-2.html"><button class="forecast-buttons__button" id="five-days-btn">5 DAYS</button></a>
   </div>
 </article>
 
-    <div class="test">
-<article class="weather-layout">
+    <article class="weather-layout">
 <div class="weather">
   <div class="weather-wrapper">
     <button class="slider-arrow left-arrow" id="left-arrow">⬅️</button>
