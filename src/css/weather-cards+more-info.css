@@ -1,8 +1,10 @@
+.hidden{
+  display: none;
+}
+
 .weather-layout{
   display: flex;
   justify-content: center;
-  top: 30.25rem;
-
 }
 .weather{
   display: flex;
