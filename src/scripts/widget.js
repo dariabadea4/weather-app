@@ -34,20 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
       main: { temp, temp_max, temp_min },
     } = city;
     const icon = data.list[0].weather[0].icon
+
+    weatherContainer.innerHTML = ' ';
+
     const weatherInfo = `<div class="current-weather">
                           <img class="about-icon" src="http://openweathermap.org/img/wn/${icon}.png"/>
                           <span class="location">${name}, ${country}</span>
                           <div class="temp-values">
-                            <div class="current-temp">-3</div>
+                            <div class="current-temp">${Math.round(temp)}</div>
                             <div class="min-max__temp">
                               <div class="min-max__temps">
                                 <div class="min-temp">min</div>
-                                <div class="temps"> -2°</div>
+                                <div class="temps"> ${Math.round(temp_min)}°</div>
                               </div>
                               <div class="line"></div>
                               <div class="min-max__temps">
                                 <div class="max-temp">max</div>
-                                <div class="temps"> 1°</div>
+                                <div class="temps"> ${Math.round(temp_max)}°</div>
                               </div>
                             </div>
                           </div>
@@ -58,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     minTempElement.textContent = `${Math.round(dayData.main.temp_min)}°C`;
     maxTempElement.textContent = `${Math.round(dayData.main.temp_max)}°C`;
 
-   
+
 
   };
   cityInputElement.addEventListener('change', () => {
