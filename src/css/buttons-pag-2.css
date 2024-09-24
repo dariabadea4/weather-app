@@ -8,15 +8,16 @@
     justify-content: center;
     gap: 1.25rem;
     padding: 0.625rem;
-    position: absolute;
+    /*position: absolute;*/
     top: 11.625rem;
     right: 50%;
-    transform: translate(50%);
+    /*transform: translate(50%);*/
+
 }
 .forecast-buttons__button {
     width: 7.875rem;
     line-height: 1.688rem;
-    padding: 0rem 0.75rem;
+    padding: 0 0.75rem;
     border: none;
     background-color: var(--color-white-50);
     color: var(--color-black);
@@ -34,6 +35,7 @@
 @media screen and (min-width: 768px) {
     .forecast-buttons{
         top:25.813rem;
+      justify-content: center;
     }
 }
 
@@ -42,5 +44,6 @@
         top:25.75rem;
         right: 6.875rem;
         transform: translate(0);
+        justify-content: flex-end;
     }
 }

@@ -1,12 +1,13 @@
 /* input field */
 .city-input {
-  position: relative;
+  /*position: relative;*/
   top: 1.875rem;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 .city-input__field-container {
   position: relative;
@@ -19,7 +20,7 @@
   height: 3rem;
   border-radius: 30px;
   padding-left: 57px;
-  border: 0px;
+  border: 0;
 }
 
 .city-input__field::placeholder {
@@ -104,7 +105,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--color-main-transparent-50);
-  border: 0px;
+  border: 0;
   border-radius: 35px;
   padding:0 9px 0 12px;
   font-size: 14px;
