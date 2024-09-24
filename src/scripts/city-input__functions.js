@@ -2,8 +2,10 @@ const favorites = document.querySelector('.viewed-city__favorites-container'),
   nextBtn = document.querySelector('.viewed-city__next'),
   prevBtn = document.querySelector('.viewed-city__prev');
 
-const itemsOnPage = 4;
-let currentPage = 0;
+let itemsOnPage,
+    currentPage = 0,
+    longitude,
+    latitude;
 
 // store cities in local storage
 const setCity = (key, value) => {
@@ -25,19 +27,72 @@ const getCity = key => {
   }
 };
 
-// remove item from local storage
+// check how many cities are in favorites
+const checkLength = (arr, number)=>{
+  switch (true) {
+    case (arr.length > 4):
+      nextBtn.classList.remove('hidden')
+      break;
+    default:
+      nextBtn.classList.add('hidden')
+      break;
+  }
+  switch (true) {
+    case (number > 0):
+      prevBtn.classList.remove('hidden')
+      break;
+  
+    default:
+      prevBtn.classList.add('hidden')
+      break;
+  }
+}
+
+// not actually getting the location
+
+const getLocation=()=>{
+  setTimeout(Notify.failure('Location not found,try again later'),2000)
+}
+
+
+// check the size of the page
+const checkPageSize=(number)=>{
+  switch (true) {
+    case (number < 500 && number > 400):
+      itemsOnPage = 3;
+      break;
+    case (number < 400):
+      itemsOnPage = 2;
+      break;
+    default:
+      itemsOnPage = 4;
+      break;
+  }
+}
+
+// create city object
+const newCity = (cityName) => ({ 
+  cityName :cityName, 
+  id: Math.floor((Math.random()*200)+1)
+});
 
 const saveCity = value => {
+  const cityObj = newCity(value)
   const currentState = getCity('orase');
   if (currentState === undefined) {
-    setCity('orase', [value]);
+    setCity('orase', [cityObj]);
   } else {
-    currentState.push(value);
+    const cityObj = newCity(value)
+    currentState.push(cityObj);
     setCity('orase', currentState);
   }
 };
 
+// truncate displayed city
 const shortWord = (str, maxLength) => {
+  if(!str){
+    return
+  }
   if (str.length > maxLength) {
     return str.substring(0, maxLength) + '...';
   }
@@ -51,22 +106,18 @@ const populateFavorites = () => {
   if (cities === undefined) {
     return;
   } else {
-    if (cities.length < 4) {
-      nextBtn.classList.add('hidden');
-    }
-    if(currentPage >= 1){
-      prevBtn.classList.remove('hidden')
-    }
+    checkPageSize(window.innerWidth)
+    checkLength(cities, currentPage)
     favorites.innerHTML = '';
     const begin = currentPage * itemsOnPage,
-      end = begin + itemsOnPage,
-      pageItems = cities.slice(begin, end);
+          end = begin + itemsOnPage,
+          pageItems = cities.slice(begin, end);
 
     pageItems.forEach(item => {
-      const shortCity = shortWord(item, 7);
-      const favorite = `<button class="viewed-city" type="button" value="${shortCity}">
+      const shortCity = shortWord(item.cityName, 6);
+      const favorite = `<button class="viewed-city" type="button" value="${item.cityName}"data-id="${item.id}">
                                   ${shortCity}
-                                  <svg class="viewed-city__close-btn">
+                                  <svg class="viewed-city__close-btn" data-id="${item.id}">
                                       <use href ="./city-input-icons.svg#icon-close"></use>
                                   </svg>
                               </button>`;
@@ -85,9 +136,20 @@ const nextPage = pageNumber => {
 
 const prevPage = pageNumber => {
   if (pageNumber >= 1) {
-    currentPage --;
+    currentPage--;
     populateFavorites();
+    console.log(currentPage);
   }
 };
 
-export {getCity, saveCity, populateFavorites, nextPage, prevPage, currentPage };
+export {
+  setCity,
+  getCity,
+  saveCity,
+  populateFavorites,
+  nextPage,
+  prevPage,
+  getLocation,
+  currentPage,
+};
+

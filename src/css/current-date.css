@@ -1,85 +1,269 @@
-
 .date-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--background);
-  width: auto;
+  background-color: #102136cc;
+  color: #ffffff;
+  width: 280px;
   height: 184px;
   border-radius: 34px;
-}
-.sun-container {
-  display: flex;
+  position: absolute;
+  top: 449px;
+  left: 22px;
+  right: 22px;
+  bottom: 157px;
 }
 
 .day {
   width: 53px;
   height: 46px;
-  padding-top: 32px;
-  margin-left: 50px;
-  font-family: var(--primary-font);
+  position: absolute;
+  top: 32px;
+  left: 55px;
+  right: 20px;
+  bottom: 6px;
   font-size: 45px;
   font-weight: 300;
   line-height: 54px;
   letter-spacing: 0.04em;
   text-align: center;
-  color: var(--white);
 }
+
 .date-container sup {
-  padding-top: 32px;
+  position: absolute;
+  top: 32px;
+  left: 110px;
+  font-size: 20px;
 }
+
 .weekday {
   width: 65px;
   height: 46px;
-  padding-top: 32px;
-  padding-left: 20px;
+  position: absolute;
+  top: 32px;
+  left: 150px;
   font-size: 45px;
   font-weight: 300;
   line-height: 54px;
   letter-spacing: 0.04em;
   text-align: center;
-  color: var(--white);
 }
 
 .month {
   flex-wrap: wrap;
   width: 59px;
   height: 50px;
-  margin-top: 0;
-  margin-left: 35px;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
   letter-spacing: 0.04em;
   text-align: right;
-  color: var(--white);
+  position: absolute;
+  top: 97px;
+  left: 50px;
 }
+
 .verticalLine {
   border: 1px solid #ffffff;
   height: 22px;
-  margin-left: 30px;
-  margin-top: 0;
+  position: absolute;
+  top: 94px;
+  left: 133px;
 }
+
 .time {
-  margin-top: 0;
-  margin-left: 20px;
   width: 60px;
   height: 17px;
+  font-family: var(Lato);
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
   letter-spacing: 0.04em;
   text-align: left;
-  color: var(--white);
-}
-.sunrise {
-  margin-left: 0px;
-}
-.sunset {
-  margin-left: 25px;
+  position: absolute;
+  top: 97px;
+  left: 158px;
 }
 
-.date-container svg {
+.sun-container {
+  display: flex;
+  position: absolute;
+  top: 130px;
+  left: 61px;
+}
+
+.sunrise {
+  position: absolute;
+  left: 15px;
+  font-size: 14px;
+}
+
+.verticalLine1 {
+  border: 1px solid #ffffff;
+  height: 22px;
+  position: absolute;
+  top: 0px;
+  left: 72px;
+}
+
+.sunset {
+  position: absolute;
+  left: 115px;
+  font-size: 14px;
+}
+
+.sunrise-svg {
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  fill: #ff6b09;
   width: 20px;
   height: 20px;
+  background-color: #ffffff;
+}
+
+.sunset-svg {
+  position: absolute;
+  top: 0px;
+  left: 90px;
   fill: #ff6b09;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .date-container {
+    width: 704px;
+    height: 250px;
+    top: 639px;
+    left: 32px;
+    right: 32px;
+    bottom: 245px;
+  }
+
+  .day {
+    top: 32px;
+    left: 190px;
+    font-size: 90px;
+  }
+
+  .date-container sup {
+    top: 20px;
+    left: 290px;
+    font-size: 30px;
+  }
+
+  .weekday {
+    top: 32px;
+    left: 350px;
+    font-size: 90px;
+  }
+
+  .month {
+    font-size: 18px;
+    top: 130px;
+    left: 225px;
+  }
+
+  .verticalLine {
+    top: 130px;
+    left: 330px;
+  }
+
+  .time {
+    font-size: 18px;
+    font-weight: 400;
+    top: 130px;
+    left: 369px;
+  }
+
+  .sun-container {
+    top: 190px;
+    left: 258px;
+  }
+
+  .sunrise {
+    left: 10px;
+    font-size: 18px;
+  }
+
+  .sunset {
+    left: 130px;
+    font-size: 18px;
+  }
+
+  .sunrise-svg {
+    left: -20px;
+  }
+
+  .sunset-svg {
+    left: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .date-container {
+    width: 624px;
+    height: 264px;
+    top: 686px;
+  }
+
+  .day {
+    top: 50px;
+    left: 16px;
+    font-size: 90px;
+  }
+
+  .date-container sup {
+    top: 40px;
+    left: 120px;
+    font-size: 30px;
+  }
+
+  .weekday {
+    top: 50px;
+    left: 180px;
+    font-size: 90px;
+  }
+
+  .month {
+    font-size: 18px;
+    top: 162px;
+    left: 25px;
+  }
+
+  .verticalLine {
+    top: 162px;
+    left: 130px;
+  }
+
+  .time {
+    font-size: 18px;
+    font-weight: 400;
+    top: 162px;
+    left: 160px;
+  }
+
+  .sun-container {
+    top: 162px;
+    left: 390px;
+  }
+
+  .sunrise {
+    left: 10px;
+    font-size: 18px;
+  }
+
+  .sunset {
+    left: 130px;
+    font-size: 18px;
+  }
+
+  .sunrise-svg {
+    left: -20px;
+  }
+
+  .sunset-svg {
+    left: 100px;
+  }
 }

@@ -1,0 +1,43 @@
+.quote {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    color: var(--color-white);
+    position: absolute;
+    top: 677px;
+    right: 10px;
+}
+.quote-author {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    color: var(--color-white);
+}
+/*media */
+@media (min-width: 768px) {
+    .quote {
+        width: 379.58px;
+        height: 80px;
+        top: 760px;
+        right: 32px;  
+    }
+    .quote-author{
+        width: 94.14px;
+        height: 22px;
+    }
+}
+@media (min-width: 1280px){
+    .quote {
+        width: 395rem;
+        height: 4.875rem;
+        top: 46.125rem;
+    }
+    .quote-author{
+
+    }
+}
