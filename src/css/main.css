@@ -3,6 +3,7 @@
 @import url('./city-input.css');
 @import url('./weather-cards+more-info.css');
 @import url('./buttons.css');
+@import url('./bg.css');
 *{
     font-family: "Lato", sans-serif;
     box-sizing: border-box;
