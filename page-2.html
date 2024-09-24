@@ -9,9 +9,13 @@
   <script type="module" crossorigin src="/weather-app/page-2.js"></script>
   <link rel="modulepreload" crossorigin href="/weather-app/assets/city-input__favorites-DJSUhGZf.js">
   <link rel="modulepreload" crossorigin href="/weather-app/assets/vendor-De2ec26M.js">
-  <link rel="stylesheet" crossorigin href="/weather-app/assets/page-2-BjINQkm8.css">
+  <link rel="stylesheet" crossorigin href="/weather-app/assets/page-2-BEStz_6f.css">
 </head>
 <body>
+    <body>
+        <svg class="svg1"><use href="../public/bg-1.svg"/></svg>
+        <svg class="svg2"><use href="../public/bg-2.svg"/></svg>
+</body>
     <div class="test">
 <article class="city-input">
     <div class="city-input__field-container">
@@ -32,7 +36,8 @@
         </svg>
     </div>
 </article>
-    <article>
+    <div class="page-2__position-1">
+        <article>
   <div class="weather-info">  
   </div>
   <!--forecast-buttons section-->
@@ -42,7 +47,7 @@
   </div>
 </article>
 
-    <article class="weather-layout">
+        <article class="weather-layout hidden">
 <div class="weather">
   <div class="weather-wrapper">
     <button class="slider-arrow left-arrow" id="left-arrow">⬅️</button>
@@ -55,6 +60,7 @@
 </div>
 </article>
 
+    </div>
     <article class="margin">
   <!-- Button for showing/hiding the chart positioned under weather layout -->
   <div class="button-container">
