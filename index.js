@@ -15,5 +15,5 @@ import{i as $}from"./assets/city-input__favorites-DJSUhGZf.js";fetch("https://wo
                               </div>
                             </div>
                           </div>
-                        </div>`;s.insertAdjacentHTML("afterbegin",C),n.textContent=`${e.city.name}, ${e.city.country}`,c.textContent=`${Math.round(o.main.temp)}°C`,u.textContent=`${Math.round(o.main.temp_min)}°C`,m.textContent=`${Math.round(o.main.temp_max)}°C`};r.addEventListener("change",()=>{const e=r.value.trim();e&&i(e)});const l=((a=$)==null?void 0:a.trim())||"Kyiv";i(l)});
+                        </div>`;s.insertAdjacentHTML("afterbegin",C),n.textContent=`${e.city.name}, ${e.city.country}`,c.textContent=`${Math.round(o.main.temp)}°C`,u.textContent=`${Math.round(o.main.temp_min)}°C`,m.textContent=`${Math.round(o.main.temp_max)}°C`};r.addEventListener("change",()=>{const e=r.value.trim();e&&i(e)});const l=((a=$)==null?void 0:a.trim())||"Kyiv";i(l)});document.URL.includes("index")&&document.querySelector("#today-btn").classList.add("selected");
 //# sourceMappingURL=index.js.map
