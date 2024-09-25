@@ -188,5 +188,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     getWeather(inputData)
   });
+  document.querySelector('.weather-layout').addEventListener('click',(e)=>{
+    if(e.target.nodeName != 'BUTTON'){
+      return
+    }
+    document.querySelector('.button-location').classList.remove('page-2__position-1')
+  });
 });
 

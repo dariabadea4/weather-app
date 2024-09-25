@@ -7,10 +7,9 @@
   height: 184px;
   border-radius: 34px;
   position: absolute;
-  top: 449px;
-  left: 22px;
-  right: 22px;
-  bottom: 157px;
+  top: 27.75rem;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .day {
@@ -116,9 +115,9 @@
   top: 0px;
   left: -10px;
   fill: #ff6b09;
+  stroke: #ff6b09;
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
 }
 
 .sunset-svg {
@@ -126,19 +125,16 @@
   top: 0px;
   left: 90px;
   fill: #ff6b09;
+  stroke: #ff6b09;
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
 }
 
 @media only screen and (min-width: 768px) {
   .date-container {
     width: 704px;
     height: 250px;
-    top: 639px;
-    left: 32px;
-    right: 32px;
-    bottom: 245px;
+    top: 41.625rem;
   }
 
   .day {
@@ -205,7 +201,10 @@
   .date-container {
     width: 624px;
     height: 264px;
-    top: 686px;
+    border-radius: 0 34px 0 0;
+    left: 0;
+    bottom: 0;
+    transform: translate(0);
   }
 
   .day {
