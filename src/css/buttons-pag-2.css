@@ -8,11 +8,6 @@
     justify-content: center;
     gap: 1.25rem;
     padding: 0.625rem;
-    /*position: absolute;*/
-    top: 11.625rem;
-    right: 50%;
-    /*transform: translate(50%);*/
-
 }
 .forecast-buttons__button {
     width: 7.875rem;
@@ -34,16 +29,16 @@
 
 @media screen and (min-width: 768px) {
     .forecast-buttons{
-        top:25.813rem;
       justify-content: center;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .forecast-buttons{
-        top:25.75rem;
-        right: 6.875rem;
-        transform: translate(0);
         justify-content: flex-end;
+    }
+    .forecast-buttons__button {
+        width: 11.375rem;
+        height: 1.688rem;
     }
 }

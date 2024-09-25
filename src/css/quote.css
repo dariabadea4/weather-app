@@ -1,43 +1,59 @@
 .quote {
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 16.8px;
-    letter-spacing: 0.04em;
-    text-align: right;
-    color: var(--color-white);
-    position: absolute;
-    top: 677px;
-    right: 10px;
+  max-width: 17.5rem;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: var(--color-white);
+  position: absolute;
+  top: 677px;
+  right: 50%;
+  transform: translate(48%);
+  padding-bottom: 3rem;
 }
 .quote-author {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    letter-spacing: 0.04em;
-    text-align: right;
-    color: var(--color-white);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: var(--color-white);
 }
 /*media */
 @media (min-width: 768px) {
-    .quote {
-        width: 379.58px;
-        height: 80px;
-        top: 760px;
-        right: 32px;  
-    }
-    .quote-author{
-        width: 94.14px;
-        height: 22px;
-    }
+  .quote {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.4px;
+    max-width: 23.75rem;
+    height: 80px;
+    top: 61.5rem;
+    right: 50%;
+    transform: translate(92.5%);
+  }
+  .quote-author {
+    width: 94.14px;
+    height: 22px;
+  }
 }
-@media (min-width: 1280px){
-    .quote {
-        width: 395rem;
-        height: 4.875rem;
-        top: 46.125rem;
-    }
-    .quote-author{
+@media (min-width: 1280px) {
+  .quote {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.4px;
+    max-width: 21.25rem;
+    height: 4.875rem;
+    top: 46.125rem;
+    padding-bottom: 7.25rem;
+    right: 75px;
+    transform: translate(0);
+  }
 
-    }
+  .quote-author {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+  }
 }
